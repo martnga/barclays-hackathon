@@ -1,74 +1,47 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-<!--			<link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>-->
+<html>
+<head>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-			
-    </head>
+<meta name="description" content="Simplest possible examples of HTML, CSS and JavaScript." />
+<meta name="author" content="//samdutton.com">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+<meta itemprop="name" content="simpl.info: simplest possible examples of HTML, CSS and JavaScript">
+<meta itemprop="image" content="/icon_192x192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta id="theme-color" name="theme-color" content="#fff">
 
-    <body>
-			
-			 <div class="container">
-        <!-- Page Content goes here -->
-				 
-				 <div class="row">
-      <div class="col s12 holder"> 
-					  <video id="video" width="640" height="480" autoplay></video>
-<button id="snap"></button>
-<canvas id="canvas" width="640" height="480"></canvas>
-					 </div>
-    
-    </div>
-          
-      </div>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-			
-			
-				<script>
-			// Put event listeners into place
-window.addEventListener("DOMContentLoaded", function() {
-	// Grab elements, create settings, etc.
-	var canvas = document.getElementById("canvas"),
-		context = canvas.getContext("2d"),
-		video = document.getElementById("video"),
-		videoObj = { "video": true },
-		errBack = function(error) {
-			console.log("Video capture error: ", error.code); 
-		};
+<base target="_blank">
 
-	// Put video listeners into place
-	if(navigator.getUserMedia) { // Standard
-		navigator.getUserMedia(videoObj, function(stream) {
-			video.src = stream;
-			video.play();
-		}, errBack);
-	} else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
-		navigator.webkitGetUserMedia(videoObj, function(stream){
-			video.src = window.webkitURL.createObjectURL(stream);
-			video.play();
-		}, errBack);
-	}
-	else if(navigator.mozGetUserMedia) { // Firefox-prefixed
-		navigator.mozGetUserMedia(videoObj, function(stream){
-			video.src = window.URL.createObjectURL(stream);
-			video.play();
-		}, errBack);
-	}
-}, false);
+ <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 			
-			</script>
-    </body>
-		
-			<script>
-			
-	
-  </html>
-        
+<link rel="stylesheet" href="css/main.css" />
+
+	<style>
+  div.select {
+    margin: 0 0 1em 0;
+  }
+  </style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+  
+
+  <div class="select">
+    <label for="videoSource">Video source: </label><select id="videoSource"></select>
+  </div>
+
+  <video muted autoplay></video>
+
+  <script src="js/main.js"></script>
+
+  
+</div>
+
+<script src="../../js/lib/ga.js"></script>
+
+</body>
+</html>
