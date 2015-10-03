@@ -28,3 +28,7 @@ body {
 .payment-received {
     color: #00c853;
 }
+
+.large-thin-text {
+    font-weight: 300;
+}
