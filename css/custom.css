@@ -1,0 +1,19 @@
+body {
+ background-color: cornflowerblue;
+	height: 100vh;
+	color: white;
+	
+}
+
+.holder {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+	 
+}
+
+#splashscreen {
+ padding-top: 20vh; 
+} 
