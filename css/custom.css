@@ -1,8 +1,11 @@
 body {
- background-color: cornflowerblue;
 	height: 100vh;
-	color: white;
-	
+
+}
+
+.splash-bg {
+    background-color: cornflowerblue;
+    color: white;
 }
 
 .holder {
@@ -11,9 +14,17 @@ body {
  flex-wrap: wrap;
  justify-content: center;
  align-items: center;
-	 
+
 }
 
 #splashscreen {
- padding-top: 20vh; 
-} 
+ padding-top: 20vh;
+}
+
+.payment-made {
+    color: #b71c1c;
+}
+
+.payment-received {
+    color: #00c853;
+}
