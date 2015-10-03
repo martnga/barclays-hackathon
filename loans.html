@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <link rel="stylesheet" type="text/css" href="css/barclays.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<title>No Loans</title>
+
+<body>
+
+
+  <nav>
+    <div class="nav-wrapper blue lighten-1">
+      <a href="#!" class="brand-logo"><img src="images/barclays-copy-crop.png"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/accounts.html">Accounts</a></li>
+        <li><a href="/loans.html">Loans</a></li>
+        <li><a href="/add_beneficiary.html">Beneficiaries</a></li>
+        <li><a href="/transactions.html">Transactions</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/accounts.html">Accounts</a></li>
+        <li><a href="/loans.html">Loans</a></li>
+        <li><a href="/add_beneficiary.html">Beneficiaries</a></li>
+        <li><a href="/transactions.html">Transactions</a></li>
+    </ul>
+</div>
+</nav>
+
+	   <div class="jumbotron">
+	   	<div class="container">
+	   		<div class="row">
+	   			<h3>Loans Available</h3>
+	   			<form action="#" style="font-size: 1.3em;">
+                        <p><strong>
+                          <input name="group1" type="radio" id="test1" />
+                          <label for="test1">Home Loan</label><strong>
+                      </p>
+                      <p><strong>
+                          <input name="group1" type="radio" id="test2" />
+                          <label for="test2">Car Loan</label><strong>
+                      </p>
+                      <p><strong>
+                          <input class="with-gap" name="group1" type="radio" id="test3"  />
+                          <label for="test3">Personal Loan</label><strong>
+                      </p>
+                      <p><strong>
+                        <input name="group1" type="radio" id="test4" type="radio"/>
+                        <label for="test4">Mortgage</label><strong>
+                    </p>
+                </form>
+                <br><br><br>
+            <div class="center-align">
+                <a href="loan1.html" class="waves-effect waves-light btn-large  blue lighten-1">Request for Loan</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".button-collapse").sideNav();
+});
+</script>
+</body>
+</html>

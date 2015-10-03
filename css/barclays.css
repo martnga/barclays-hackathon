@@ -1,0 +1,43 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	background-color: #FFFFFF;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 930px; 
+	padding: 0 10px; 
+}
+
+.nav {
+margin: 0;
+padding: 20px 0;
+display: inline;
+}
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase; 
+}
+
+.nav li {
+  display: inline;
+}
+
+
+.btn:hover {
+	background: #117bff;
+	cursor: pointer; 
+}
