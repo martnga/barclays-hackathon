@@ -15,10 +15,18 @@ body {
 	padding: 0 10px; 
 }
 
-.nav {
+/*.nav {
 margin: 0;
 padding: 20px 0;
+background-color: #BFBFBF;
 display: inline;
+}
+
+.nav ul {
+	list-style: none;
+	margin: 0 auto; 
+	padding: 50px 0;
+	text-align: center; 
 }
 
 .nav a {
@@ -33,6 +41,7 @@ display: inline;
 }
 
 .nav li {
+    padding-left: 50px;
   display: inline;
 }
 
@@ -40,4 +49,8 @@ display: inline;
 .btn:hover {
 	background: #117bff;
 	cursor: pointer; 
+}*/
+
+.jumbotron p {
+	color: black;
 }
