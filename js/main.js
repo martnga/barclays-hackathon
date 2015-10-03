@@ -12,7 +12,11 @@ function gotSources(sourceInfos) {
     var sourceInfo = sourceInfos[i];
     var option = document.createElement('option');
     option.value = sourceInfo.id;
-    if (sourceInfo.kind === 'video') {
+    if (sourceInfo.kind === 'audio') {
+      option.text = sourceInfo.label || 'microphone ' +
+        (audioSelect.length + 1);
+      audioSelect.appendChild(option);
+    } else if (sourceInfo.kind === 'video') {
       option.text = sourceInfo.label || 'camera ' + (videoSelect.length + 1);
       videoSelect.appendChild(option);
     } else {
