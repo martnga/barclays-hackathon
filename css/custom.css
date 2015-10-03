@@ -28,3 +28,12 @@ body {
 .payment-received {
     color: #00c853;
 }
+
+#beneficiary_button{
+	padding-top: 40px;
+display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
